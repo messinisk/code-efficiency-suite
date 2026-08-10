@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "code-efficiency-suite"
-version = "0.0.0"
+version = "0.0.1"
 description = "Code efficiency suite"
 authors = [
     { name = "messinis kostas", email = "messiniskostas0@gmail.com" }
