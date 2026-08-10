@@ -1,5 +1,8 @@
 # metrics/system.py
-import os, psutil
+import os
+
+import psutil
+
 
 def system_info():
     process = psutil.Process(os.getpid())

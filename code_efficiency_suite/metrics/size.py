@@ -1,5 +1,6 @@
 from pympler import asizeof
 
+
 def measure_size(obj):
     """
     Μετράει το πραγματικό μέγεθος ενός αντικειμένου στη RAM.

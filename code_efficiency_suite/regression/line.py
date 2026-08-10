@@ -1,6 +1,7 @@
+
 import numpy as np
 
-history = []
+history: list[float] = []
 
 def regression_point(value):
     history.append(value)
@@ -18,7 +19,8 @@ def regression_point(value):
 
     try:
         m, b = np.polyfit(x, y, 1)
-    except Exception:
+    except (np.linalg.LinAlgError, ValueError):
+
         # Fallback σε περίπτωση SVD error
         return {
             "slope": 0.0,

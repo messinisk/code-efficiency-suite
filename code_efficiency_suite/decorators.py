@@ -1,14 +1,24 @@
 # decorators.py
+from collections.abc import Callable
+from typing import Any
+
 from decorator import decorator
-from .metrics.speed import measure_speed
+
+from .metrics.code_size import analyze_code_size
 from .metrics.memory import measure_memory
 from .metrics.size import measure_size
-from .metrics.code_size import analyze_code_size
-from .utils.conditions import check_condition
-from .regression.line import regression_point
+from .metrics.speed import measure_speed
 from .metrics.system import system_info
+from .regression.line import regression_point
+from .utils.conditions import check_condition
 
-def suite_test(speed=None, memory=None, size=None, code=None):
+
+def suite_test(
+    speed: str | None = None,
+    memory: str | None = None,
+    size: str | None = None,
+    code: str | None = None
+) -> Callable[[Callable[..., Any]], Callable[..., dict[str, Any]]]:
     @decorator
     def wrapper(func, *args, **kwargs):
 

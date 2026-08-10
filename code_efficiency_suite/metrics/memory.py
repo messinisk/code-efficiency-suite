@@ -1,5 +1,7 @@
-import psutil
 import os
+
+import psutil
+
 
 def measure_memory(func, *args, **kwargs):
     """

@@ -1,6 +1,7 @@
 # utils/conditions.py
 from .units import parse_units
 
+
 def check_condition(value, rule):
     if rule is None:
         return True

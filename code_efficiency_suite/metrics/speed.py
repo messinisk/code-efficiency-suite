@@ -1,5 +1,6 @@
 import time
 
+
 def measure_speed(func, *args, **kwargs):
     """
     Μετράει τον συνολικό χρόνο εκτέλεσης μιας μεθόδου.
