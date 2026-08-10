@@ -1,2 +1,1 @@
-# code-efficiency-suite
-Code efficiency suite
+# Code efficiency suite
