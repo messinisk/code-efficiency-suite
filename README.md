@@ -7,7 +7,7 @@ user code:<br/>
 
 @suite_test()<br/>
 def fsum(n: int) -> float:<br/>
-  return sum(i for i in range(n))<br/>
+  \t return sum(i for i in range(n))<br/>
 
 run :<br/>
 print("fsum(100)", fsum(100))<br/>
